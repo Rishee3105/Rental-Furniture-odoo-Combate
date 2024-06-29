@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Renting - Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Furniture Renting</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="cart-container">
+                <h2>Your Cart</h2>
+                <div class="cart-item">
+                    <img src="chair4.jfif" alt="Chair">
+                    <div class="item-details">
+                        <h3>Comfortable Chair</h3>
+                        <p>Description of the chair</p>
+                        <p>Price: $50</p>
+                        <label for="quantity-chair">Quantity:</label>
+                        <input type="number" id="quantity-chair" class="quantity-input" min="1" value="1">
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <img src="table1.jfif" alt="Table">
+                    <div class="item-details">
+                        <h3>Wooden Table</h3>
+                        <p>Description of the table</p>
+                        <p>Price: $100</p>
+                        <label for="quantity-table">Quantity:</label>
+                        <input type="number" id="quantity-table" class="quantity-input" min="1" value="1">
+                        <button class="remove-btn">Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="summary-container">
+                <h2>Order Summary</h2>
+                <div id="summary-details"></div>
+                <h3 id="total-amount">Total: $150</h3>
+                <div class="coupon-container">
+                    <label for="coupon-code">Coupon Code:</label>
+                    <input type="text" id="coupon-code" placeholder="Enter coupon code">
+                    <button id="apply-coupon">Apply Coupon</button>
+                </div>
+                <h3 id="discounted-amount"></h3>
+                <button class="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </main>
+    <script src="cart.js"></script>
+</body>
+</html>
