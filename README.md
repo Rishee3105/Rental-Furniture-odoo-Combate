@@ -1,0 +1,1 @@
+# Rental-Furniture-odoo-Combate
